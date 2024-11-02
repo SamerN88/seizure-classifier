@@ -25,7 +25,9 @@ However, if you want to avoid very long runtimes, you can actually interrupt the
 If you run this code as-is, it will produce the exact same model that is saved in `seizure_classifier.joblib`.
 
 
-> **Important Note:** The running of `generate_training_data.py` will create directories, subdirectories, and files to store and organize the generated training data. It will also create a file named `LAST_SUCCESS.txt` which is used to keep track of where the program left off if it gets interrupted. <ins>**_Do not delete this file_**</ins> unless you want to restart data generation from scratch, but then you’ll also have to delete all the data that has already been generated or else you’ll get duplicate data.
+### Important Note
+
+The running of `generate_training_data.py` will create directories, subdirectories, and files to store and organize the generated training data. It will also create a file named `LAST_SUCCESS.txt` which is used to keep track of where the program left off if it gets interrupted. <ins>**_Do not delete this file_**</ins> unless you want to restart data generation from scratch, but then you’ll also have to delete all the data that has already been generated or else you’ll get duplicate data.
 
 <br>
 
