@@ -6,7 +6,7 @@ Simply run `pip install -r requirements.txt`.
 
 ## Contents
 
-This repository contains all the necessary code to download EEG brainwave data from PhysioNet, extract features, and train and test a Random Forest Classifier (RFC) to detect seizure events.
+This repository contains all the necessary code to download EEG brainwave data from [PhysioNet](https://physionet.org/content/chbmit/1.0.0/), extract features, and train and test a Random Forest Classifier (RFC) to detect seizure events.
 
 - `generate_training_data.py` - For downloading records from the dataset, extracting features, and generating usable training data.
 - `train.py` - For training and testing a model.
