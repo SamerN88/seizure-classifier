@@ -113,12 +113,12 @@ def extract_features(eeg_data, sfreq):
     mean, std, variance, skewness, kurtosis = time_domain_features(eeg_data)
 
     # Frequency-domain features
-    theta_bp, theta_bp, alpha_bp, beta_bp, gamma_bp = freq_domain_features(eeg_data, sfreq)
+    delta_bp, theta_bp, alpha_bp, beta_bp, gamma_bp = freq_domain_features(eeg_data, sfreq)
 
     # Combine into a single feature array
     features = np.concatenate([
         mean, std, variance, skewness, kurtosis,
-        theta_bp, theta_bp, alpha_bp, beta_bp, gamma_bp
+        delta_bp, theta_bp, alpha_bp, beta_bp, gamma_bp
     ], axis=0)
 
     return features  # since we have 23 channels and 10 features, the feature vector will have shape (230,)
